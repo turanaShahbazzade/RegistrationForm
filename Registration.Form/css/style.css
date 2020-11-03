@@ -1,0 +1,78 @@
+body {
+  background-color: #fff685;
+}
+
+h3 {
+  color: green;
+}
+
+span {
+  color: brown;
+  font-style: italic;
+}
+
+input[name="name"], input[name="phone"], input[name="street"], input[name="city"], .county-select, input[name="webSite"] {
+  width: 80%;
+  border: 3px solid skyblue;
+  border-radius: 10px;
+  margin: 4px 0;
+}
+
+input[name="name"]:focus, input:focus[name="phone"], input:focus[name="street"], input:focus[name="city"], .county-select:focus, input:focus[name="webSite"] {
+  outline: none;
+}
+
+input[name="email"], input[name="password"], input[name="repeatEmail"], input[name="repeatPassword"], select, input[name="year"] {
+  border: 3px solid skyblue;
+  border-radius: 10px;
+}
+
+input[name="email"]:focus, input:focus[name="password"], input:focus[name="repeatEmail"], input:focus[name="repeatPassword"], select:focus, input:focus[name="year"] {
+  outline: none;
+}
+
+label {
+  font-style: italic;
+  color: brown;
+  font-size: 20px;
+  padding-top: 1px;
+}
+
+textarea {
+  width: 100%;
+  border: none !important;
+  background-color: cadetblue !important;
+  color: white !important;
+}
+
+textarea:focus {
+  outline: none;
+}
+
+.label-textarea {
+  font-style: normal;
+  color: white;
+  padding-left: 5px;
+}
+
+.text-area {
+  background-color: cadetblue;
+  border: 3px solid white;
+}
+
+.register {
+  width: 150px;
+  height: 50px;
+  color: green;
+  border: 4px solid skyblue;
+  border-radius: 10px;
+}
+
+.register:focus {
+  outline: none;
+}
+
+.border {
+  border: 3px solid red !important;
+}
+/*# sourceMappingURL=style.css.map */

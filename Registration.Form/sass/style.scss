@@ -1,0 +1,105 @@
+body {
+  background-color: #fff685;
+}
+h3 {
+  color: green;
+}
+span {
+  color: brown;
+  font-style: italic;
+}
+
+input[name="name"] {
+  width: 80%;
+  border: 3px solid skyblue;
+  border-radius: 10px;
+  margin: 4px 0;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+input[name="phone"] {
+  @extend input[name="name"];
+}
+input[name="street"] {
+  @extend input[name="name"];
+}
+input[name="city"] {
+  @extend input[name="name"];
+}
+.county-select {
+  @extend input[name="name"];
+}
+input[name="webSite"] {
+  @extend input[name="name"];
+}
+input[name="email"] {
+  border: 3px solid skyblue;
+  border-radius: 10px;
+  &:focus {
+    outline: none;
+  }
+}
+
+input[name="password"] {
+  @extend input[name="email"];
+}
+
+input[name="repeatEmail"] {
+  @extend input[name="email"];
+}
+input[name="repeatPassword"] {
+  @extend input[name="email"];
+}
+
+label {
+  font-style: italic;
+  color: brown;
+  font-size: 20px;
+  padding-top: 1px;
+}
+textarea {
+  width: 100%;
+  border: none !important;
+  background-color: cadetblue !important;
+  color: white !important;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+.label-textarea {
+  font-style: normal;
+  color: white;
+  padding-left: 5px;
+}
+
+.text-area {
+  background-color: cadetblue;
+  border: 3px solid white;
+}
+
+select {
+  @extend input[name="email"];
+}
+
+input[name="year"] {
+  @extend input[name="email"];
+}
+.register {
+  width: 150px;
+  height: 50px;
+  color: green;
+  border: 4px solid skyblue;
+  border-radius: 10px;
+  &:focus {
+    outline: none;
+  }
+}
+
+.border {
+  border: 3px solid red !important;
+}

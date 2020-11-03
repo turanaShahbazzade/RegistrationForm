@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <main>
+      <div class="container">
+        <form>
+          <div class="row">
+            <div class="col-lg-12">
+              <div
+                class="text text-center align-items-center jutify-content-center pt-3"
+              >
+                <h1>REGISTRATION</h1>
+              </div>
+            </div>
+
+            <div class="col-lg-12">
+              <h3>ACCOUNT DETAILS</h3>
+            </div>
+            <div class="col-lg-5 text-right">
+              <label for="email">Email*</label>
+              <input type="email" name="email" /> <br />
+              <label for="password">Password*</label>
+              <input type="password" name="password" />
+            </div>
+            <div class="col-lg-5 text-right">
+              <label for="repeatEmail">Repeat Email*</label>
+              <input type="email" name="repeatEmail" /> <br />
+              <label for="repeatPassword">Repeat Password*</label>
+              <input type="password" name="repeatPassword" />
+            </div>
+            <div class="col-lg-2">
+              <div></div>
+              <br />
+              <br />
+              <p style="color: red;">*obligatory fields</p>
+            </div>
+            <div class="col-lg-12 form-part-2">
+              <div class="row">
+                <div class="col-lg-6">
+                  <h3>Personal Details</h3>
+                </div>
+                <div class="col-lg-6">
+                  <h3>Further Information</h3>
+                </div>
+
+                <div class="col-lg-6">
+                  <div class="row">
+                    <div class="col-lg-3 text-right pr-0">
+                      <label for="name">Name*</label> <br />
+                      <label for="phone">Phone*</label> <br />
+                      <label class="text-muted" for="street">Street</label>
+                      <br />
+                      <label for="city">City*</label> <br />
+                      <label for="country">County*</label> <br />
+                      <label class="text-muted" for="webSite">WebSite</label>
+                      <br />
+                    </div>
+                    <div class="col-lg-9">
+                      <input type="text" name="name" required /> <br />
+
+                      <input type="tel" name="phone" required /> <br />
+
+                      <input type="text" name="street" /> <br />
+
+                      <input type="text" name="city" required /> <br />
+
+                      <select class="my-1 county-select">
+                        <option value="0"></option>
+                        <option value="1">Azerbaijan</option>
+                        <option value="2">Turkey</option>
+                        <option value="3">Italy</option>
+                        <option value="4">America</option>
+                        <option value="5">England</option>
+                        <option value="6">Germany</option>
+                        <option value="7">Russia</option>
+                        <option value="8">Dubai</option>
+                        <option value="9">Bosnia</option>
+                      </select>
+                      <br />
+                      <input type="text" name="webSite" placeholder="http://" />
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <div class="row">
+                    <div class="col-lg-3 text-right">
+                      <label for="gender">Gender*</label>
+                      <label for="birthDate">Birthdate*</label>
+                      <label for="nationality">Nationality*</label>
+                      <label for="children">Children*</label>
+                    </div>
+                    <div class="col-lg-9">
+                      <input type="radio" name="gender" value="male" />
+                      Male
+                      <input type="radio" name="gender" value="female" />
+                      Female<br />
+                      <select
+                        class="mt-2 day"
+                        name="dob-day"
+                        id="dob-day"
+                        required
+                      >
+                        <option value="">Day</option>
+                        <option value=""></option>
+                        <option value="01">01</option>
+                        <option value="02">02</option>
+                        <option value="03">03</option>
+                        <option value="04">04</option>
+                        <option value="05">05</option>
+                        <option value="06">06</option>
+                        <option value="07">07</option>
+                        <option value="08">08</option>
+                        <option value="09">09</option>
+                        <option value="10">10</option>
+                        <option value="11">11</option>
+                        <option value="12">12</option>
+                        <option value="13">13</option>
+                        <option value="14">14</option>
+                        <option value="15">15</option>
+                        <option value="16">16</option>
+                        <option value="17">17</option>
+                        <option value="18">18</option>
+                        <option value="19">19</option>
+                        <option value="20">20</option>
+                        <option value="21">21</option>
+                        <option value="22">22</option>
+                        <option value="23">23</option>
+                        <option value="24">24</option>
+                        <option value="25">25</option>
+                        <option value="26">26</option>
+                        <option value="27">27</option>
+                        <option value="28">28</option>
+                        <option value="29">29</option>
+                        <option value="30">30</option>
+                        <option value="31">31</option>
+                      </select>
+                      <select
+                        class="mt-3 month"
+                        name="dob-month"
+                        id="dob-month"
+                        required
+                      >
+                        <option value="">Month</option>
+                        <option value="">-----</option>
+                        <option value="01">January</option>
+                        <option value="02">February</option>
+                        <option value="03">March</option>
+                        <option value="04">April</option>
+                        <option value="05">May</option>
+                        <option value="06">June</option>
+                        <option value="07">July</option>
+                        <option value="08">August</option>
+                        <option value="09">September</option>
+                        <option value="10">October</option>
+                        <option value="11">November</option>
+                        <option value="12">December</option>
+                      </select>
+                      <input
+                        class="w-25 mt-2"
+                        type="number"
+                        name="year"
+                        required
+                      />
+                      <span>e.g 1970</span>
+                      <select class="mt-2" name="nationality">
+                        <option value=""></option>
+                        <option value="afghan">Afghan</option>
+                        <option value="albanian">Albanian</option>
+                        <option value="algerian">Algerian</option>
+                        <option value="american">American</option>
+                        <option value="andorran">Andorran</option>
+                        <option value="angolan">Angolan</option>
+                        <option value="antiguans">Antiguans</option>
+                        <option value="argentinean">Argentinean</option>
+                        <option value="armenian">Armenian</option>
+                        <option value="australian">Australian</option>
+                        <option value="austrian">Austrian</option>
+                        <option value="azerbaijani">Azerbaijani</option>
+                        <option value="bahamian">Bahamian</option>
+                        <option value="bahraini">Bahraini</option>
+                        <option value="bangladeshi">Bangladeshi</option>
+                        <option value="barbadian">Barbadian</option>
+                        <option value="barbudans">Barbudans</option>
+                        <option value="batswana">Batswana</option>
+                        <option value="belarusian">Belarusian</option>
+                        <option value="belgian">Belgian</option>
+                        <option value="belizean">Belizean</option>
+                        <option value="beninese">Beninese</option>
+                        <option value="bhutanese">Bhutanese</option>
+                      </select>
+                      <br />
+                      <input
+                        class="mt-4"
+                        type="checkbox"
+                        name="children"
+                        required
+                      />
+                      <br />
+
+                      <div class="form-group text-area mt-4">
+                        <label
+                          class="label-textarea h5"
+                          for="exampleFormControlTextarea1"
+                          >HELPFUL INFORMATION</label
+                        >
+                        <textarea
+                          class="form-control"
+                          id="exampleFormControlTextarea1"
+                          rows="3"
+                          disabled
+                        >
+Lorem ipsum dolor sit amet,  quos culpa! Amet, exercitationem reiciendis?
+    </textarea
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-lg-8 pt-5">
+                  <h3>TERMS AND MACHING</h3>
+                  <input type="checkbox" name="fisrtCheckbox"  />
+                  <label for="first">*I accept terms and conditions</label>
+                  <br />
+                  <input type="checkbox" name="secondCheckbox" />
+                  <label for="second">I accept terms and conditions</label>
+                  <br />
+                  <input type="checkbox" name="thirdCheckbox" />
+                  <label for="third">I accept terms and conditions</label>
+                </div>
+                <div class="col-lg-4 pt-5">
+                  <input
+                    class="register"
+                    type="submit"
+                    value="REGISTER"
+                    name="submit"
+                  disabled />
+                </div>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </main>
+
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+      integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
